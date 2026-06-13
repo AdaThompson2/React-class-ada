@@ -1,49 +1,49 @@
-import React from 'react'
-import { useState} from 'react'
-import { useEffect } from 'react'
+// import React from 'react'
+// import { useState} from 'react'
+// import { useEffect } from 'react'
 
-export default function Fetchdata() {
+// export default function Fetchdata() {
     
 
-const [data, setData] = useState([]);
+// const [data, setData] = useState([]);
 
-useEffect ( () =>{
+// useEffect ( () =>{
 
-fetch('https://jsonplaceholder.typicode.com/users').then((get)=>get.json())
-.then((result)=>setData(result))
+// fetch('https://jsonplaceholder.typicode.com/users').then((get)=>get.json())
+// .then((result)=>setData(result))
 
-}, [])
-
-
-  return (
-    <div>
-          {data.map((users) => {
-return(
-<div key={users.id}>
-<h1 className='gap-5 text-2xl text-orange-500'>{users.name}</h1>
-<p>{users.username}</p>
-<p>{users.email}</p>
-<h1>{users.address.street}</h1>
-<h1>{users.address.suite}</h1>
-<p>{users.address.city}</p>
-<h1>{users.address.zipcode}</h1>
-<p>{users.address.geo.lat}</p>
-<p>{users.address.geo.lng}</p>
-<p>{users.phone}</p>
-<p>{users.website}</p>
-
-</div>
+// }, [])
 
 
+//   return (
+//     <div>
+//           {data.map((users) => {
+// return(
+// <div key={users.id}>
+// <h1 className='gap-5 text-2xl text-orange-500'>{users.name}</h1>
+// <p>{users.username}</p>
+// <p>{users.email}</p>
+// <h1>{users.address.street}</h1>
+// <h1>{users.address.suite}</h1>
+// <p>{users.address.city}</p>
+// <h1>{users.address.zipcode}</h1>
+// <p>{users.address.geo.lat}</p>
+// <p>{users.address.geo.lng}</p>
+// <p>{users.phone}</p>
+// <p>{users.website}</p>
 
-)
-
-})}
+// </div>
 
 
-</div> 
-)
-}
+
+// )
+
+// })}
+
+
+// </div> 
+// )
+// }
 
 
 
@@ -148,4 +148,7 @@ return(
 // data- where the information is stored/ 
 // more like a variable and a function that changes the state
 // setData - use to change the state eg from string to number or null
+
+// Mutation
+
 

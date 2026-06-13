@@ -11,7 +11,8 @@ import Todo from './component/Todo'
 // import Compliment from './component/compliment'
 import Contact from './component/Contact'
 import Search from './component/Search'
-import Fetchdata from './component/Fetchdata'
+// import Fetchdata from './component/Fetchdata'
+import Fetchpost from './component/Fetchpost'
 
 
 
@@ -34,7 +35,8 @@ function App() {
       <Navbar/>
       <Contact/>
       <Search/>
-      <Fetchdata/>
+      {/* <Fetchdata/> */}
+       <Fetchpost/>
     
 
       <Routes>
